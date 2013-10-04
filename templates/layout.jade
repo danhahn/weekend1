@@ -1,0 +1,58 @@
+!!! 5
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width')
+      title
+        block title
+          = locals.name
+      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel='stylesheet', href='/css/github.css')
+      link(rel='stylesheet', href='/css/bootstrap.css')
+      link(rel='stylesheet', href='/css/flat-ui.css')
+      link(rel='stylesheet', href='/css/main.css')
+      link(rel="icon", type="image/png", href="/images/favicon.png")
+      script(src='/js/highlight.pack.js')
+      script(src='/js/jquery.min.js')
+      script(src='/js/bootstrap.min.js')
+      script(src='/js/global.js')
+  body(class=bodyclass)
+
+    div.main-nav
+      div.container
+        div.navbar.navbar-inverse
+          div.navbar-inner
+            a.brand(href="/")= locals.name
+            div
+              ul.nav
+                li
+                  a(href="/") Home
+                li
+                  a(href="/syllabus.html") Syllabus
+                li
+                  a(href="/notes/tags/index.html") HTML Tag List
+                li
+                  a(href="/notes/ascii/index.html") ASCII Codes
+                li
+                  a(href="/notes/colors/index.html") Colors
+
+    header.main-header
+      div.container
+        block header
+          h1
+            a(href=locals.url)= locals.name
+          p= locals.description
+    div.container
+      div.row-fluid
+        block content
+          div.span9.main-content
+            h2 Welcome to zombocom!
+    footer
+      div.container
+        div.content-wrap
+          section.copy
+            p &copy; #{ new Date().getFullYear() } #{ locals.owner }
