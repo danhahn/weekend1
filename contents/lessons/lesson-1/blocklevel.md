@@ -22,14 +22,14 @@ We will use this DOCTYPE for all our pages.
 
 This is an HTML5 doctype
 
-##`<html>` Element
+##HTML Element
 `<html>` - Tell the browser that the document is an HTML file and should render it such. The `<html></html>` Element should be the first element after the DOCTYPE and the last element within the HTML document.
 
-##`<head>` Element
+##Head Element
 
 The head element can contain information about the document. The browser does not display the "head information" to the user. The following tags can be in the head section: `<base>`, `<link>`, `<meta>`, `<script>`, `<style>`, and `<title>`
 
-##`<body>` Element
+##Body Element
 The body element defines the documents' body. It contains all the contents of the document (like text, images, colors, graphics, etc.).
 
 ##Adding a page title
@@ -72,24 +72,25 @@ Section headers should be used to define the important of the content. So there 
 	<h1>Article Title</h1>
 	<h2>Article Subsection</h2>
 	<h3>SubHeader</h3>
-	<h2>Article Subsection</h2>
+	<h4>Article Subsection</h4>
 
-###Paragraph Element (<p>)
+
+##Paragraph Element
 
 Since HTML will not display line breaks within the HTML source to get that formatting to display within the browser we need to use the paragraph tag.
 `<p></p>`. The paragraph tag is a block-level element. It will add a small amount of space above and below the element.
 
-####EXAMPLE
+###EXAMPLE
 
 	<p>sample text</p>
 
-Breaking up a Page into Divisions (<div>)
+##Breaking up a Page into Divisions
 
 Breaking the page up into divisions allows you to apply styles to an entire chunk of your page at once. This can also be used to layout your page. The <div> element is a block-level element but has not margin applied like the paragraph tag.
 
 With the div element you will apply an attribute of class or id to apply a style to it.
 
-####EXAMPLE
+###EXAMPLE
 
 	<div>
 		<h2>Article Subsection</h2>
@@ -98,16 +99,16 @@ With the div element you will apply an attribute of class or id to apply a style
 		<p>sample text</p>
 	</div>
 
-###Creating line break
-The `<br>` tag inserts a single line break.
+##Creating line break
+The `<br>` tag inserts a single line break at the point where the tag is added.
 
-The `<br>` tag is an empty tag.
+###EXAMPLE
 
-####EXAMPLE
+	<p>By Daniel Hahn<br>October 22, 2003</p>
 
-	<p>This example is<br> <span>very important</span></p>
+<p>By Daniel Hahn<br>October 22, 2003</p>
 
-###List - `<ul>`, `<ol>`, `<li>`
+##List
 List are built into HTML and come in two types, ordered and unordered. List are made up of at least two tags the `<ul>` or `<ol>` and the `<li>`.
 
 The `<ul>` or `<ol>` will add a margin at the top and the bottom of the list along with indenting the list on the left side.
@@ -119,7 +120,8 @@ Tag|Description
 `<li></li>`|List Item.
 
 ###example
-##Unordered list
+
+###Unordered list
 
 	<ul>
 		<li>List item</li>
@@ -127,7 +129,13 @@ Tag|Description
 		<li>List item</li>
 	</ul>
 
-Ordered List
+<ul>
+	<li>List item</li>
+	<li>List item</li>
+	<li>List item</li>
+</ul>
+
+###Ordered List
 
 	<ol>
 		<li>List item</li>
@@ -135,17 +143,11 @@ Ordered List
 		<li>List item</li>
 	</ol>
 
-###Example
-
-	<div>
-		<h1> Lorem ipsum dolor sit amet </h1>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas quis augue ut massa nonummy viverra. <a href=”http://www.lorenipsum.com”>Cras convallis pulvinar</a> ante. Proin varius velit eget tellus. Duis elit. Quisque lectus velit, consequat sed, nonummy quis, molestie vitae, nisl. Praesent vehicula, odio vitae </p>
-		<ul>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-		<ul>
-	</div>
+<ol>
+	<li>List item</li>
+	<li>List item</li>
+	<li>List item</li>
+</ol>
 
 ###Nested List Item
 
@@ -158,7 +160,16 @@ You can nest a list with in a list but it must be added to a list item
 				<li>Sub List Item</li>
 			</ul>
 		</li>
-	<ul>
+	</ul>
+
+<ul>
+	<li>
+		Item Text
+		<ul>
+			<li>Sub List Item</li>
+		</ul>
+	</li>
+</ul>
 
 ##Blockquote
 
@@ -167,6 +178,10 @@ A browser inserts white space before and after a blockquote element. It also ins
 	<blockquote>
 		<p>Here is a long quotation here is a long quotation</p>
 	</blockquote>
+
+<blockquote>
+	<p>Here is a long quotation here is a long quotation</p>
+</blockquote>
 
 ##New HTML5 Tags
 

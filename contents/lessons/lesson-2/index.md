@@ -18,7 +18,7 @@ This week we will talk about how to create links and embed images.
 * [Image Examples](image-examples.html)
 * [Homework](homework.html)
 
-[Download Notes <i class="icon-download-alt icon-white"></i>](week2-notes.zip)[Download Stater File <i class="icon-download-alt icon-white"></i>](week2.zip)
+[Download Notes <i class="icon-download-alt icon-white"></i>](lesson2-notes.zip)[Download Stater File <i class="icon-download-alt icon-white"></i>](lesson2.zip)
 
 
 The anchor tag or the `<a>` tag is most commonly used to create a link to an other file or page.  The anchor tag by default will not act as a link without the `href` attribute.  
