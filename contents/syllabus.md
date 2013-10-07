@@ -15,13 +15,13 @@ subject: TEST
 Daniel Hahn - dan@svahtml.com
 
 ##Class web site
-http://www.svahtml.com/weekend1
+http://weekend1.svahtml.com/
 
 All class work, materials, and assignments will be given though the class web site.  In addition any announcement may be made on the site. The site will also provide back lesson and class presentations will be found there for you to review.
 
 	Login for both lab computers
-	User Name : smc2422a
-	Password : hahn
+	User Name : tbd
+	Password : tbd
 
 ##Purpose of class
 This is a hands-on course that will use HTML in new and complex ways. The course will begin with an overview of the Internet and how it functions creatively and as a utility. Students will write HTML and learn how to format text, incorporate images, build tables, create links, host and upload a Web site and utilize JavaScript. Students will design and implement their own websites or enhance an existing one, as well as participate in design discussions and critiques of student and professional work.

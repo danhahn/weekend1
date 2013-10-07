@@ -1,0 +1,16 @@
+extends layout
+block append vars
+    - bodyclass = 'article-detail'
+block prepend title
+    | #{ page.title + " - "}
+block js
+    script(src='/js/highlight.pack.js')
+    script(src='/js/jquery.min.js')
+    script(src='/js/bootstrap.min.js')
+block header
+    include author
+    div.well.small
+        h1= page.title
+block content
+    article.article
+        section.content!= typogr(page.html).typogrify()

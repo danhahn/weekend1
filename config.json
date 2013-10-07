@@ -3,7 +3,7 @@
 		"url": "http://localhost:8080",
 		"name": "SVA HTML",
 		"owner": "Daniel Hahn",
-		"description": "Weekend Fall 2013"
+		"description": "Weekend 1 - Fall 2013"
 	},
 	"plugins": [
 		"./plugins/paginator.coffee",
